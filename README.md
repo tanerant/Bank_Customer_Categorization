@@ -33,11 +33,12 @@ I tried three different models and evaluated them using Accuracy and F1 score.
 (Buraya sonuç gelicek . ) 
 
 * Deptinc_score stands out in the feature importance chart.
-(feature imp grafiği gelicek)
+
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/rf_feature_imp.png "Feature importance")
 
 ## Model performance
 XGB model  outperformed the other approaches. 
-(Model performance grafiği gelicek.)
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/models_perfromances.PNG "Model Performances")
 
 ## Summary
 * When examining the model performance, f-score (1) (bad risk) was considered. We want to find the bad risk client.
