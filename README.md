@@ -6,7 +6,7 @@ Historical data were gathered from bank customers to determine whether a custome
 ## Preprocess 
 * First, I converted the target variable type to an object.
 * I detected missing values
-(mising value seaborn eklenecek)
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/mising.png "Missing values")
 * I filled the missing values with average and most frequent values.
 
 ## EDA
