@@ -19,6 +19,9 @@ Historical data were gathered from bank customers to determine whether a custome
 * I paid attention to the homogeneous distribution of the data and the meaning of the variable.
 * I did a chi-square test on the variables I separated and all of them turned out to be related to the target variable.
 
+If the number of delaying monthly payments is greater than 5, he / she is put in the bad risk group. The number of delaying payments per month is 5 and the value of properties of customers who are identified as good risk is different from others.
+(data_viz)
+
 ## Model Building 
 
 First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.   
