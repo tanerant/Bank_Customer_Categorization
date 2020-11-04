@@ -1,2 +1,42 @@
 # Bank_Customer_Categorization
 Historical data were gathered from bank customers to determine whether a customer is a good or bad credit risk for a home equity loan. Bad risk customers are more likely to default on the loan.
+
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn.
+
+## Preprocess 
+* First, I converted the target variable type to an object.
+* I detected missing values
+(mising value seaborn eklenecek)
+* I filled the missing values with average and most frequent values.
+
+## EDA
+* I looked at the relationship of categorical variables with target variable.
+* I grouped the target value according to the mean of the numerical values.Then I separated the different ones.
+* Shapiro-wilks test was performed to check normality assumption.(All Non normal distributed).
+* Then I grouped them and translated them into a categorical variable. Thus, I was able to test variables that we know to affect the target variable.
+* I paid attention to the homogeneous distribution of the data and the meaning of the variable.
+* I did a chi-square test on the variables I separated and all of them turned out to be related to the target variable.
+
+## Model Building 
+
+First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.   
+
+I tried three different models and evaluated them using Accuracy and F1 score.    
+
+## Only debtinc_score model
+
+* I achieved 87% accuracy in the logistic regression model that I created with only debt-income ratio.
+
+* So if we know only the debt-income ratio of a new customer, we can find out that this customer is either a good risk or a bad risk with 87% accuracy.
+(Buraya sonuç gelicek . ) 
+
+* Deptinc_score stands out in the feature importance chart.
+(feature imp grafiği gelicek)
+
+## Model performance
+XGB model  outperformed the other approaches. 
+(Model performance grafiği gelicek.)
+
+## Summary
+* When examining the model performance, f-score (1) (bad risk) was considered. We want to find the bad risk client.
+
