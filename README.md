@@ -7,7 +7,7 @@ Historical data were gathered from bank customers to determine whether a custome
 * First, I converted the target variable type to an object.
 * I detected missing values
 
-![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/mising.png "Missing values")
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/misssing.png "Missing values")
 
 * I filled the missing values with average and most frequent values.
 
@@ -20,20 +20,22 @@ Historical data were gathered from bank customers to determine whether a custome
 * I did a chi-square test on the variables I separated and all of them turned out to be related to the target variable.
 
 If the number of delaying monthly payments is greater than 5, he / she is put in the bad risk group. The number of delaying payments per month is 5 and the value of properties of customers who are identified as good risk is different from others.
-(data_viz)
+
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/data_viz.png "data_viz")
 
 ## Model Building 
 
 First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.   
 
-I tried three different models and evaluated them using Accuracy and F1 score.    
+I tried three different models and evaluated them using Accuracy and F1 score.  
 
 ## Only debtinc_score model
 
 * I achieved 87% accuracy in the logistic regression model that I created with only debt-income ratio.
 
 * So if we know only the debt-income ratio of a new customer, we can find out that this customer is either a good risk or a bad risk with 87% accuracy.
-(Buraya sonuç gelicek . ) 
+
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/debtinc_score.PNG "debtinc_score")
 
 * Deptinc_score stands out in the feature importance chart.
 
@@ -41,7 +43,7 @@ I tried three different models and evaluated them using Accuracy and F1 score.
 
 ## Model performance
 XGB model  outperformed the other approaches. 
-![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/models_perfromances.PNG "Model Performances")
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/models_performances.PNG "Model Performances")
 
 ## Summary
 * When examining the model performance, f-score (1) (bad risk) was considered. We want to find the bad risk client.
