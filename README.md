@@ -7,7 +7,7 @@ Historical data were gathered from bank customers to determine whether a custome
 * First, I converted the target variable type to an object.
 * I detected missing values
 
-![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/misssing.png "Missing values")
+![alt text](https://github.com/tanerant/Bank_Customer_Categorization/blob/main/missing.png "Missing values")
 
 * I filled the missing values with average and most frequent values.
 
